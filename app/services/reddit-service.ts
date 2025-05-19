@@ -79,7 +79,8 @@ async function ratePostsRelevance(posts: RedditPost[]): Promise<RedditPost[]> {
       model: groq("llama-3.1-8b-instant"),
       prompt: `
         Rate the following Reddit posts on a scale from 0 to 10 based on how relevant they are to waste management, 
-        trash bags (Müllbeutel), or recycling topics, and how suitable they would be for promoting DEISS products.
+        trash bags (Müllbeutel), or recycling topics, invites to or stories about garbage collection actions, 
+        and how suitable they would be for promoting DEISS products.
         
         Posts:
         ${JSON.stringify(postsForRating, null, 2)}
@@ -127,7 +128,8 @@ export async function generateCommentsForPost(post: RedditPost): Promise<string[
       prompt: `
         Generate 3 different comments that could be posted on this Reddit post to promote DEISS trash bags or waste management products.
         Each comment should be helpful, relevant to the post content, and subtly promote DEISS products without being too sales-focused.
-        Promote the features of the DEISS trash bags, e.g. their recyclability or the compostability of the Bioline products.
+        Promote the features of the DEISS trash bags, e.g. their recyclability or the compostability of the Bioline products which are 
+        suitable for the compost bin.
         Share your experiences and situations when you used the bags.
 
         
