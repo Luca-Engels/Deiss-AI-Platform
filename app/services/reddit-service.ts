@@ -81,7 +81,8 @@ async function ratePostsRelevance(posts: RedditPost[]): Promise<RedditPost[]> {
         Rate the following Reddit posts on a scale from 0 to 10 based on how relevant they are to waste management, 
         trash bags (Müllbeutel), or recycling topics, invites to or stories about garbage collection actions, 
         and how suitable they would be for promoting DEISS products. The topics must be connected to individual recycling 
-        needs and not just news articles about recycling plants. All posts must be in German.
+        needs and not just news articles about recycling plants. Exclude posts with negative emotions (e.g. dead pets) 
+        but include posts with positive emotions. All posts must be in German. 
         
         Posts:
         ${JSON.stringify(postsForRating, null, 2)}
