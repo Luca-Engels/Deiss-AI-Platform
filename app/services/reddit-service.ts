@@ -82,7 +82,7 @@ async function ratePostsRelevance(posts: RedditPost[]): Promise<RedditPost[]> {
         trash bags (Müllbeutel), or recycling topics, invites to or stories about garbage collection actions, 
         and how suitable they would be for promoting DEISS products. The topics must be connected to individual recycling 
         needs and not just news articles about recycling plants. Exclude posts with negative emotions (e.g. dead pets) 
-        but include posts with positive emotions. All posts must be in German. 
+        but include posts with positive emotions. Include only posts with text content. ALL POSTS MUST BE IN GERMAN LANGUAGE! 
         
         Posts:
         ${JSON.stringify(postsForRating, null, 2)}
