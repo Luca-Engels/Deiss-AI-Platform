@@ -82,7 +82,7 @@ async function ratePostsRelevance(posts: RedditPost[]): Promise<RedditPost[]> {
         trash bags (Müllbeutel), or recycling topics, invites to or stories about garbage collection actions, 
         and how suitable they would be for promoting DEISS products. The topics must be connected to individual recycling 
         needs and not just news articles about recycling plants. Exclude posts with negative emotions (e.g. dead pets) 
-        but include posts with positive emotions. All posts must be in German. 
+        but include posts with positive emotions. Include only posts with text content. ALL POSTS MUST BE IN GERMAN LANGUAGE! 
         
         Posts:
         ${JSON.stringify(postsForRating, null, 2)}
@@ -130,7 +130,7 @@ export async function generateCommentsForPost(post: RedditPost): Promise<string[
       prompt: `
         Generate 3 different comments that could be posted on this Reddit post to promote DEISS trash bags or waste management products.
         Each comment should be helpful, relevant to the post content, and subtly promote DEISS products without being too sales-focused.
-        Promote the features of the DEISS trash bags, e.g. their recyclability or the compostability of the Bioline products which are 
+        Promote the features of the DEISS trash bags, e.g. their recyclability and the compostability of the "Bioline" products which are biodegradable 
         suitable for the compost bin.
         Share your experiences and and personal anecdotes when you used the bags.
 
