@@ -127,6 +127,8 @@ export async function generateCommentsForPost(post: RedditPost): Promise<string[
       prompt: `
         Generate 3 different comments that could be posted on this Reddit post to promote DEISS trash bags or waste management products.
         Each comment should be helpful, relevant to the post content, and subtly promote DEISS products without being too sales-focused.
+        Promote the features of the DEISS trash bags, e.g. their recyclability or the compostability of the Bioline products.
+        Share your experiences and situations when you used the bags.
         
         Reddit Post:
         Title: ${post.title}
