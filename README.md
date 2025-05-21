@@ -12,7 +12,11 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 ## Initialize
 
+create a Redidit account and create a project on the Reddit API account page. This app must be a self use script.
+
 **[Reddit API account](https://www.reddit.com/prefs/apps/)**
+
+Remember to set up a GROQ account and set the GROQ_API_KEY to be the key in the .env file
 
 ## Deployment
 
